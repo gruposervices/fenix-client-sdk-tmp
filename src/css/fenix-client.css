@@ -1,0 +1,118 @@
+.transition {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;    
+}
+
+.no-transition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+.chat-fenix-container iframe {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}
+
+.chat-fenix-header {
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #ffffff 4%, #ffffff 100%);
+}
+
+.chat-fenix-close-header {
+    /* width: calc(100% - 40px);
+    height: 80px; */
+    position: absolute;
+    /* top: 10px;
+    left: 0; */
+    background-color: transparent;
+}
+
+.chat-fenix-chat-icon {
+    width: 60px;
+    height: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+.chat-fenix-chat-icon img {
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-left: 11px;
+    position: relative;
+    cursor: pointer;
+}
+
+.chat-fenix-icon-wrp {
+    width: 45px;
+    height: 25px;
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.chat-fenix-icon {
+    content:  "";
+    width: 10px;
+    height: 23px;
+    display: block;
+    transform: rotate(45deg) translate(22px, -9px);
+    -webkit-transform: rotate(45deg) translate(26px, -15px);
+    background-color: white;
+}
+
+.chat-fenix-icon-wrp span {
+    width: 6px;
+    height: 5px;
+    border-radius: 15px;
+    display: block;
+    background-color: #bebebe;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+
+.chat-fenix-icon-wrp span::before {
+    content:  "";
+    width: 6px;
+    height: 5px;
+    border-radius: 15px;
+    display: block;
+    background-color: #bebebe;
+    position: absolute;
+    top: 0.4px;
+    left: 10px;
+}
+
+.chat-fenix-icon-wrp span::after {
+    content:  "";
+    width: 6px;
+    height: 5px;
+    border-radius: 15px;
+    display: block;
+    background-color: #bebebe;
+    position: absolute;
+    top: 0.4px;
+    left: 20px;
+}
+
+.chat-fenix-header-minimized {
+    padding-top: '10px';
+    padding-right: '5px';
+    height: '70px';
+    display: 'none';
+}
