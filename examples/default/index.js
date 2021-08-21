@@ -7,12 +7,12 @@
 const chatFenix = new FenixClient({
     enviroment: 'homologation',
     channel: 'chat',
-    creditor: 'YOUR_CREDENTIAL_GOES_HERE...',
-    queue: 'YOUR_CREDENTIAL_GOES_HERE...',
-    subject: 'YOUR_CREDENTIAL_GOES_HERE...',
-    identifier: 'Teste',
+    creditor: 'YOUR_CREDITOR_HASH_GOES_HERE...',
+    queue: 'YOUR_QUEUE_HASH_GOES_HERE...',
+    subject: 'YOUR_SUBJECT_HASH_GOES_HERE...',
+    identifier: 'Test',
     data: {
-        name: 'Teste'
+        name: 'Test'
     }
 });
 
