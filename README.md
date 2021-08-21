@@ -9,14 +9,14 @@ For a default usage [example](https://github.com/gruposervices/fenix-client-sdk-
 
 Using as NPM package:
 <br>
-*Under construction* <br>
+_Under construction_ <br>
 
 The version distributed via npm is under development. <br>
 Consider downloading the **latest [release](https://github.com/gruposervices/fenix-client-sdk-tmp/releases)**
 
 
 ## Using Fenix Client
-After download unzip *src/css* and *src/js* files in your project directory structure.<br>
+After download unzip _src/css_ and _src/js_ files in your project directory structure.<br>
 
 ### Importing
 Import javascript and css files into your project files
@@ -38,33 +38,34 @@ const chat = new FenixClient({
   subject: '10cd395cf71c18328c863c08e78f3fd0',
   identifier: 'Client identifier',
   data: {
-    name: 'Customer Name'    
+    name: 'Customer Name'
   }
 }
 ```
 
 #### Enviroment settings
-Specify enviroment settings to validate or put on production mode. *The hashes will change according to the environment*
+Specify environment settings to validate or put on production mode. _The hashes will change according to the environment_
 
 ```javascript
 enviroment: 'homologation'
 ```
 Values:<br>
-* `homologation` : Enviroment for validations
-* `production` : Enviroment for productive mode
+- `homologation` : Environment for validations
+- `production` : Environment for productive mode
 
 Required: :heavy_check_mark:
 
 #### Channel settings
-The client can embed some Fenix channels. *Channels will be available according to the contract.*
+The client can embed some Fenix channels. _Channels will be available according to the contract._
+
 ```javascript
 channel: 'chat'
 ```
 Values: <br>
-* `chat` : Chat channel (default)
-* `sms` : SMS channel
-* `email` : E-mail channel
-* `video-stream` : Audio and video interactive streaming
+- `chat` : Chat channel (default)
+- `sms` : SMS channel
+- `email` : E-mail channel
+- `video-stream` : Audio and video interactive streaming
 
 Required: :heavy_check_mark:
 
@@ -78,9 +79,9 @@ queue: '10cd395cf71c18328c863c08e78f3fd0',
 subject: '10cd395cf71c18328c863c08e78f3fd0'
 ```
 Parameters: <br>
-* `creditor` : Corresponding organization hash. Provided after contract. <br>Required: :heavy_check_mark:
-* `queue` : Corresponding segmentation hash. When specify the client routes customers to a specific segmentation. Provided after contract. <br> Required: If empty customers should select the segmentation queue.
-* `subject` : Corresponding subject hash. When specify the client routes customers to a specific subject. Provided after contract. <br> Required: If empty customers should select the subject.
+- `creditor` : Corresponding organization hash. Provided after contract. <br>Required: :heavy_check_mark:
+- `queue` : Corresponding segmentation hash. When specify the client routes customers to a specific segmentation. Provided after contract. <br> Required: If empty customers should select the segmentation queue.
+- `subject` : Corresponding subject hash. When specify the client routes customers to a specific subject. Provided after contract. <br> Required: If empty customers should select the subject.
 
 #### Customer Identifier
 To direct customers directly to attendance service you should specify all routing hashes (creditor, queue, subject) and a customer identifier.<br>
