@@ -1,8 +1,8 @@
 ## Fenix Client
 FenixClient is a library to facilitate the implementation of e-mail, stream, phone, chat and sms channels by developers of the partners tools. <br>
-It abstracts the complexity of channel integration through a JavaScript library providing a simple and intuitive communication interface. <br>
-For more details see the [wiki](link_wiki) <br>
-For a default usage [example](https://github.com/gruposervices/fenix-client-sdk-tmp/blob/master/examples/default/index.js)
+It abstracts the complexity of channel integration through a JavaScript library providing a simple and intuitive communication interface. <br> <br>
+For more details see the [wiki](link_wiki). <br>
+For a default usage [example](https://github.com/gruposervices/fenix-client-sdk-tmp/blob/master/examples/default/index.js).
 
 ## Installation
 `FenixClient` is written in JavaScript and will be distributed as package via `npm`.
@@ -52,7 +52,7 @@ enviroment: 'homologation'
 Values:<br>
 * `homologation` : Enviroment for validations
 * `production` : Enviroment for productive mode
-* 
+
 Required: :heavy_check_mark:
 
 #### Channel settings
@@ -97,3 +97,14 @@ Some identifiers need to be provided following a pattern according to the channe
 |  Video Stream       |  Any. Example: marcelo123                 |
 
 Required: If empty customers should input data on a form.
+
+#### Additional parameters
+According to the contract, additional parameters can be sent
+
+```javascript
+data: {    
+    enabled_key: 'Custom value'
+}
+```
+Additional parameters must be enabled for the client to be able to send to Fenix.<br>
+Required: :heavy_multiplication_x:
