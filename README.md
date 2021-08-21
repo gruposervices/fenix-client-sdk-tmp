@@ -49,17 +49,18 @@ Specify enviroment settings to validate or put on production mode. *The hashes w
 ```javascript
 enviroment: 'homologation'
 ```
-Values:
-Required: :heavy_check_mark:
+Values:<br>
 * `homologation` : Enviroment for validations
 * `production` : Enviroment for productive mode
+* 
+Required: :heavy_check_mark:
 
 #### Channel settings
 The client can embed some Fenix channels. *Channels will be available according to the contract.*
 ```javascript
 channel: 'chat'
 ```
-Values:
+Values: <br>
 * `chat` : Chat channel (default)
 * `sms` : SMS channel
 * `email` : E-mail channel
