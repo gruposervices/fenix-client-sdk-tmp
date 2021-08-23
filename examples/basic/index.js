@@ -16,6 +16,8 @@ const chatFenix = new FenixClient({
     }
 });
 
+chatFenix.setActions({ minimize: 'close' });
+
 chatFenix.style({
     width: '400px',
     height: '550px',
