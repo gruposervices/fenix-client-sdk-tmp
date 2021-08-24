@@ -5,8 +5,8 @@ For more details see the [wiki](https://github.com/gruposervices/fenix-client-sd
 For a basic usage [example](https://github.com/gruposervices/fenix-client-sdk-tmp/blob/master/examples/basic/index.js).
 
 ## Reminder
-To be able to use our ClientSDK you'll need your own key credentials.
-To be able to fully utilize the ClientSDK features, you'll need at least serve your page through a HTTP server. 
+To be able to use our ClientSDK you'll need your own key credentials.<br>
+To be able to fully utilize the ClientSDK features, you'll need to at least serve your page through a HTTP server. 
 
 ## Installation
 `FenixClient` is written in JavaScript and will be distributed as package via `npm`.
