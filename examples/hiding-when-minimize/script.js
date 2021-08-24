@@ -1,7 +1,9 @@
 /**
  * Reminder
  * 
- * You'll need your own credentials to be able to use our client SDK
+ * You'll need your own credentials to be able to use our client SDK.
+ * 
+ * If you want to fully use our features you'll need to run this example inside a http(s) server.
  */
 
 const chatFenix = new FenixClient({
@@ -10,13 +12,20 @@ const chatFenix = new FenixClient({
     creditor: 'YOUR_CREDITOR_HASH_GOES_HERE...',
     queue: 'YOUR_QUEUE_HASH_GOES_HERE...',
     subject: 'YOUR_SUBJECT_HASH_GOES_HERE...',
-    identifier: 'Test',
+    identifier: 'Teste',
     data: {
-        name: 'Test'
+        name: 'Teste'
     }
 });
 
-chatFenix.setActions({ minimize: 'close' });
+/**
+ * This will make the frame hide when mimized or closed
+ * see our wiki for more.
+ */
+chatFenix.setActions({
+    minimize: 'close',
+    close: 'close'
+});
 
 chatFenix.style({
     width: '400px',
@@ -30,4 +39,8 @@ chatFenix.style({
     backgroundColor: 'white',
     boxShadow: '0 0 2px black',
     zIndex: '9999'
+});
+
+document.getElementById('open-chant').addEventListener('click', () => {
+    chatFenix.toggle();
 });

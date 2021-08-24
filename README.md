@@ -4,6 +4,10 @@ It abstracts the complexity of channel integration through a JavaScript library 
 For more details see the [wiki](link_wiki). <br>
 For a default usage [example](https://github.com/gruposervices/fenix-client-sdk-tmp/blob/master/examples/default/index.js).
 
+## Reminder
+To be able to use our ClientSDK you'll need your own key credentials.
+To be able to fully utilize the ClientSDK features, you'll need at least serve your page through a HTTP server. 
+
 ## Installation
 `FenixClient` is written in JavaScript and will be distributed as package via `npm`.
 
