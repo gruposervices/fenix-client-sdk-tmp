@@ -40,7 +40,7 @@ const chat = new FenixClient({
   data: {
     name: 'Customer Name'
   }
-}
+})
 ```
 
 #### Enviroment settings
