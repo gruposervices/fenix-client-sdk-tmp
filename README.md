@@ -106,7 +106,7 @@ Required: :heavy_check_mark:
 
 #### Routing hashes settings
 When contract Fenix some routing hashes are provided. This hashes route customers to organization business rules.
-Routing works as a tree. [Click here](wiki_details_of_creditor_queue_subject) to see details.
+Routing works as a tree. [Click here](https://github.com/gruposervices/fenix-client-sdk-tmp/wiki/Attendance-routing-tree) to see details.
 
 ```javascript
 creditor: '10cd395cf71c18328c863c08e78f3fd0',
