@@ -2,7 +2,7 @@
 FenixClient is a library to facilitate the implementation of e-mail, stream, phone, chat and sms channels by developers of the partners tools. <br>
 It abstracts the complexity of channel integration through a JavaScript library providing a simple and intuitive communication interface. <br> <br>
 For more details see the [wiki](https://github.com/gruposervices/fenix-client-sdk-tmp/wiki). <br>
-For a basic usage [example](https://github.com/gruposervices/fenix-client-sdk-tmp/blob/master/examples/basic/index.js).
+For a basic usage [example](https://github.com/gruposervices/fenix-client-sdk-tmp/tree/master/examples/basic).
 
 ## Reminder
 To be able to use our ClientSDK you'll need your own key credentials.<br>
