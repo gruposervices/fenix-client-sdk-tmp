@@ -33,13 +33,17 @@ npm run example --name=basic
 ## Installation
 `FenixClient` is written in JavaScript and will be distributed as package via `npm`.
 
-Using as NPM package:
-<br>
-_Under construction_ <br>
+### CDN
+You can get the lastest version from our CDN 
+```html
+https://cdn.fenixdigital.services/client/sdk/fenix-client-sdk-1.0.0.min.js
+```
 
+### NPM
 The version distributed via npm is under development. <br>
-Consider downloading the **latest [release](https://github.com/gruposervices/fenix-client-sdk-tmp/releases)**
 
+### Latest Release Download
+Consider downloading the **latest [release](https://github.com/gruposervices/fenix-client-sdk-tmp/releases)**<br>
 
 ## Using Fenix Client
 After download unzip _src/css_ and _src/js_ files in your project directory structure.<br>
@@ -47,8 +51,13 @@ After download unzip _src/css_ and _src/js_ files in your project directory stru
 ### Importing
 Import javascript and css files into your project files
 ```html
-fenix-client-sdk.js
+fenix-client-sdk.min.js
 fenix-client.css
+```
+
+Importing from our CDN
+```html
+https://cdn.fenixdigital.services/client/sdk/fenix-client-sdk-1.0.0.min.js
 ```
 
 ### Instantiating the client
