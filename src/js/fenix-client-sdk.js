@@ -24,7 +24,7 @@ class FenixClient {
         }
         window.addEventListener('message', (message) => {
             if(message && message.data){
-                console.log("[Fênix] Recebendo evento ...: ", message.data);
+                console.log("[Fenix] Receiving event ...: ", message.data);
                 let action = this.actions[message.data];
 
                 if(this.methods[action]){
@@ -385,7 +385,7 @@ class FenixClient {
 
     onMinimize(style) {
         if (typeof style !== 'object') {
-            throw Error(`Método ( onMinimize ) espera parâmetro do tipo ( object ) recebeu ( ${typeof style} )`);
+            throw Error(`Method ( onMinimize ) expects parameter to be ( object ) got ( ${typeof style} )`);
         } else {
             this.styleToMinimize = style;
         }
@@ -393,7 +393,7 @@ class FenixClient {
 
     onMaximize(style) {
         if (typeof style !== 'object') {
-            throw Error(`Método ( onMaximize ) espera parâmetro do tipo ( object ) recebeu ( ${typeof style} )`);
+            throw Error(`Method ( onMaximize ) expects parameter to be ( object ) got ( ${typeof style} )`);
         } else {
             this.styleToMaximize = style;
         }
