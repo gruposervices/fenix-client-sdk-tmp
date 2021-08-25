@@ -6,7 +6,29 @@ For a basic usage [example](https://github.com/gruposervices/fenix-client-sdk-tm
 
 ## Reminder
 To be able to use our ClientSDK you'll need your own key credentials.<br>
-To be able to fully utilize the ClientSDK features, you'll need to at least serve your page through a HTTP server. 
+To be able to fully utilize the ClientSDK features, you'll need to at least serve your page through a HTTP server.
+
+## Running examples
+Clone this repo
+```html
+git clone https://github.com/gruposervices/fenix-client-sdk-tmp.git
+```
+
+Install packages
+```html
+npm install
+```
+
+Running example<br>
+On `example_name` you put the example's folder name
+```
+npm run example --name=example_name
+```
+
+Example
+```
+npm run example --name=basic
+```
 
 ## Installation
 `FenixClient` is written in JavaScript and will be distributed as package via `npm`.

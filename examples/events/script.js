@@ -18,14 +18,7 @@ const chatFenix = new FenixClient({
     }
 });
 
-/**
- * This will make the frame hide when mimized or closed
- * see our wiki for more.
- */
-chatFenix.setActions({
-    minimize: 'close',
-    close: 'close'
-});
+chatFenix.setActions({ minimize: 'close' });
 
 chatFenix.style({
     width: '400px',
@@ -39,6 +32,38 @@ chatFenix.style({
     backgroundColor: 'white',
     boxShadow: '0 0 2px black',
     zIndex: '9999'
+});
+
+chatFenix.on('on-queue', () => {
+    console.log("Customer on queue ...: ");
+});
+
+chatFenix.on('created-customer', () => {
+    console.log("Customer created ...: ");
+});
+
+chatFenix.on('estabilished-attendance', () => {
+    console.log("Customer just got his attendance ...: ");
+});
+
+chatFenix.on('finished-attendance', () => {
+    console.log("Finished attendance ...: ");
+});
+
+chatFenix.on('rating', () => {
+    console.log("Customer just rated his attendance ...:");
+});
+  
+chatFenix.on('minimize', () => {
+    console.log("Frame was minimized ...:");
+});
+
+chatFenix.on('maximize', () => {
+    console.log("Frame was maximized ...:");
+});
+
+chatFenix.on('close', () => {
+    console.log("Frame was closed ...:");
 });
 
 document.getElementById('open-chat').addEventListener('click', () => {

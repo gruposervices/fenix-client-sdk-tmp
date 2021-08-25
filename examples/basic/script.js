@@ -34,6 +34,6 @@ chatFenix.style({
     zIndex: '9999'
 });
 
-document.getElementById('open-chant').addEventListener('click', () => {
+document.getElementById('open-chat').addEventListener('click', () => {
     chatFenix.toggle();
 });

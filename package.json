@@ -1,0 +1,16 @@
+{
+  "name": "fenix-client-sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gruposervices/fenix-client-sdk-tmp.git",
+  "author": "Marcelorochacampos <marcelorocha.campos98@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "minify": "./node_modules/.bin/uglifyjs ./src/js/fenix-client-sdk.js -o ./src/js/fenix-client-sdk.min.js -c --ie -m --warn --verbose",
+    "example": "http-server -c-1 -o ./examples/$npm_config_name/index.html -p 8585"
+  },
+  "devDependencies": {
+    "http-server": "^13.0.1",
+    "uglify-js": "^3.14.1"
+  }
+}

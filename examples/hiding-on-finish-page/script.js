@@ -6,6 +6,8 @@
  * If you want to fully use our features you'll need to run this example inside a http(s) server.
  */
 
+let isFinishedAttendance = false;
+
 const chatFenix = new FenixClient({
     enviroment: 'homologation',
     channel: 'chat',
@@ -18,6 +20,11 @@ const chatFenix = new FenixClient({
     }
 });
 
+
+/**
+ * This will make the frame hide when mimized
+ * see our wiki for more.
+ */
 chatFenix.setActions({ minimize: 'close' });
 
 chatFenix.style({
@@ -34,38 +41,21 @@ chatFenix.style({
     zIndex: '9999'
 });
 
-chatFenix.on('on-queue', () => {
-    console.log("Customer on queue ...: ");
-});
-
-chatFenix.on('created-customer', () => {
-    console.log("Customer created ...: ");
-});
-
-chatFenix.on('estabilished-attendance', () => {
-    console.log("Customer just got his attendance ...: ");
-});
-
 chatFenix.on('finished-attendance', () => {
-    console.log("Finished attendance ...: ");
-});
-
-chatFenix.on('rating', () => {
-    console.log("Customer just rated his attendance ...:");
-});
-  
-chatFenix.on('minimize', () => {
-    console.log("Frame was minimized ...:");
-});
-
-chatFenix.on('maximize', () => {
-    console.log("Frame was maximized ...:");
+    console.log("Finished attendance ...; ");
+    isFinishedAttendance = true;
 });
 
 chatFenix.on('close', () => {
-    console.log("Frame was closed ...:");
+
+    /**
+     * Using this flag to only hide the frame on finish page
+     */
+    if (isFinishedAttendance) {
+        chatFenix.hide();
+    }
 });
 
-document.getElementById('open-chant').addEventListener('click', () => {
+document.getElementById('open-chat').addEventListener('click', () => {
     chatFenix.toggle();
 });

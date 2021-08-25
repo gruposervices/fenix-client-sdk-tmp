@@ -18,6 +18,14 @@ const chatFenix = new FenixClient({
     }
 }, null, true);
 
+/**
+ * Styling the button and the header
+ */
+chatFenix.headerStyle({
+    headerStartColor: '#00554D',
+    headerEndColor: '#017761'
+ });
+
 chatFenix.style({
     width: '400px',
     height: '550px',
@@ -31,3 +39,5 @@ chatFenix.style({
     boxShadow: '0 0 2px black',
     zIndex: '9999'
 });
+
+chatFenix.display();
