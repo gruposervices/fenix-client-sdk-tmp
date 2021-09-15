@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fenixclient.servicesdigital.com.br/css/chatfenix.css">
+    <script src="https://cdn.fenixdigital.services/client/sdk/fenix-client-sdk-1.0.0.min.js"></script>
+
+    <style>
+        .chat-icon {
+            width: 65px;
+            height: 65px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background: linear-gradient(to right, rgb(76, 137, 163) 4%, rgb(164, 224, 251) 100%);
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .chat-icon img {
+            width: 45px;
+            height: 40px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .icon-wrp {
+            width: 45px;
+            height: 25px;
+            display: block;
+            background-color: white;
+            border-radius: 5px;
+            float: left;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .icon {
+            content:  "";
+            width: 10px;
+            height: 23px;
+            display: block;
+            transform: rotate(45deg) translate(22px, -9px);
+            -webkit-transform: rotate(45deg) translate(26px, -15px);
+            background-color: white;
+        }
+
+        .icon-wrp span {
+            width: 6px;
+            height: 5px;
+            border-radius: 15px;
+            display: block;
+            background-color: #bebebe;
+            position: absolute;
+            top: 10px;
+            left: 9px;
+        }
+
+        .icon-wrp span::before {
+            content:  "";
+            width: 6px;
+            height: 5px;
+            border-radius: 15px;
+            display: block;
+            background-color: #bebebe;
+            position: absolute;
+            top: 0.4px;
+            left: 10px;
+        }
+
+        .icon-wrp span::after {
+            content:  "";
+            width: 6px;
+            height: 5px;
+            border-radius: 15px;
+            display: block;
+            background-color: #bebebe;
+            position: absolute;
+            top: 0.4px;
+            left: 20px;
+        }
+
+        .header-minimized {
+            padding-top: '10px';
+            padding-right: '5px';
+            height: '70px';
+            display: 'none';
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-icon" id="open-chat">
+        <div class="icon-wrp">
+            <div class="icon">
+
+            </div>
+            <span></span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
