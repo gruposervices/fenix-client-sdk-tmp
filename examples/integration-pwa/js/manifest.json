@@ -1,0 +1,28 @@
+{
+  "name": "Integração PWA Fênix",
+  "short_name": "PWA Fênix",
+  "theme_color": "#fff",
+  "background_color": "#101010",
+  "display": "standalone",
+  "description": "Exemplo de integração entre PWA e o fênix client",
+  "scope": "/test-pwa",
+  "start_url": "/test-pwa",
+  "lang": "pt",
+  "icons": [
+    {
+      "src": "/img/pwa/icon72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/pwa/icon144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/pwa/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

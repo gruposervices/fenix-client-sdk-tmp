@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "minify": "./node_modules/.bin/uglifyjs ./src/js/fenix-client-sdk.js -o ./src/js/fenix-client-sdk.min.js -c --ie -m --warn --verbose",
-    "example": "http-server -c-1 -o ./examples/$npm_config_name/index.html -p 8585"
+    "example": "http-server -c-1 -a localhost -o ./examples/$npm_config_name/index.html -p 8585"
   },
   "devDependencies": {
     "http-server": "^13.0.1",

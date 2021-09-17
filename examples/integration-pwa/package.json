@@ -1,0 +1,25 @@
+{
+  "name": "pwa-fenix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config ./webpack.config.js",
+    "predev": "webpack --config ./webpack.config.js",
+    "dev": "http-server -c-1 -o -a localhost -p 8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^13.0.1",
+    "web-push": "^3.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
