@@ -48,33 +48,35 @@ export const Controller = {
 					name: 'Teste'
 				}
 			}
+			try {
+				const fenixClient = new FenixClient(clientConfig);
+				fenixClient.addId( 'chat_fenix' );
+				fenixClient.setActions({ minimize: 'close' });
 
-			const fenixClient = new FenixClient(clientConfig);
-	
-			fenixClient.addId( 'chat_fenix' );
-			fenixClient.setActions({ minimize: 'close' });
+				fenixClient.style({
+					width: window.innerWidth < 1280 ? '100vw' : '400px',
+					height: window.innerWidth < 1280 ? 'calc( 100vh - 65px ) ' : '600px',
+					position: 'fixed',
+					bottom: window.innerWidth < 1280 ? '0' : '10px',
+					right: window.innerWidth < 1280 ? '0' : '10px',
+					overflow: 'hidden',
+					backgroundColor: 'white',
+					boxShadow: '0 0 2px #505050'
+				});
+		
+				fenixClient.on('estabilished-attendance', () => {
+					console.log("Customer just got his attendance ...: ");
+				});
+		
+				fenixClient.on('finished-attendance', () => {
+					console.log("Finished attendance ...: ");
+				});
 
-			fenixClient.style({
-				width: window.innerWidth < 1280 ? '100vw' : '400px',
-				height: window.innerWidth < 1280 ? 'calc( 100vh - 65px ) ' : '600px',
-				position: 'fixed',
-				bottom: window.innerWidth < 1280 ? '0' : '10px',
-				right: window.innerWidth < 1280 ? '0' : '10px',
-				overflow: 'hidden',
-				backgroundColor: 'white',
-				boxShadow: '0 0 2px #505050'
-			});
-	
-			fenixClient.on('estabilished-attendance', () => {
-				console.log("Customer just got his attendance ...: ");
-			});
-	
-			fenixClient.on('finished-attendance', () => {
-				console.log("Finished attendance ...: ");
-			});
-
-			fenixClient.display();
-			window.fenixClient = fenixClient;
+				fenixClient.display();
+				window.fenixClient = fenixClient;
+			} catch (e) {
+				alert(e);
+			}
 		},
 		openChat() {
 			if ('fenixClient' in window) {

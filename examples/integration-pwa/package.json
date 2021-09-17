@@ -5,8 +5,9 @@
   "main": "app.bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "http-server -c-1 -o -a 192.168.15.6 -p 8080 & node ./server/message-server.js"
+    "build": "webpack --config ./webpack.config.js",
+    "predev": "webpack --config ./webpack.config.js",
+    "dev": "http-server -c-1 -o -a localhost -p 8080"
   },
   "author": "",
   "license": "ISC",
@@ -15,10 +16,10 @@
     "web-push": "^3.2.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.12"
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
   }
 }

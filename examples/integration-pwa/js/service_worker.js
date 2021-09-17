@@ -1,7 +1,7 @@
 const CACHE_NAME = 'v1.0.0';
 const FILES = [
-	'/views/test-pwa.html',
-	'/modules/pwa/dist/app.bundle.js'
+	'/',
+	'/js/dist/app.bundle.js'
 ]
 
 self.addEventListener('install', function(event){
