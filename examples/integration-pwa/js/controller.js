@@ -2,7 +2,7 @@ export const Controller = {
   start(){
     document.addEventListener('click', (event)=> {
       if(event.target.classList.contains('mdl-navigation__link')){
-        var button = event.target;
+        const button = event.target;
         switch(button.dataset['action']){
           case 'openChat': this.Menu.openChat(); break;
           case 'restartChat': this.Menu.restartChat(); break;
