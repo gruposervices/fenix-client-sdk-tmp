@@ -1,15 +1,15 @@
 const CACHE_NAME = 'v1.0.0';
 const FILES = [
-	'/',
-	'/js/dist/app.bundle.js'
+  '/',
+  '/js/dist/app.bundle.js'
 ]
 
 self.addEventListener('install', function(event){
-	event.waitUntil(
-		caches.open(CACHE_NAME).then(function(cache){
-			return cache.addAll(FILES);
-		})
-	)
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(function(cache){
+      return cache.addAll(FILES);
+    })
+  )
 })
 
 self.addEventListener('activate', function (event) {
