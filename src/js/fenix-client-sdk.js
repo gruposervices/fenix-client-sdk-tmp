@@ -70,6 +70,7 @@ class FenixClient {
                     break;
                 case 'homologation':
                     chatEndpoint = 'https://fenixhomolog.servicesdigital.com.br:82';
+                    break;
             }
 
             let creditorID = params.creditor ? params.creditor : undefined;
