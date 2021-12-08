@@ -57,7 +57,7 @@ fenix-client.css
 
 Importing from our CDN
 ```html
-https://cdn.fenixdigital.services/client/sdk/fenix-client-sdk-1.0.0.min.js
+https://cdn.fenixdigital.services/client/sdk/fenix-client-sdk-1.1.0.min.js
 ```
 
 ### Instantiating the client
