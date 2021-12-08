@@ -85,20 +85,24 @@ class FenixClient {
             chatEndpoint += identifier ? '/' + identifier : '';
             
             let query = params.data && params.identifier ? params.data : undefined;
+            chatEndpoint += '?';
             if(query){
-                chatEndpoint += '?'
                 Object.keys(query).forEach(function(key){
                     chatEndpoint += key + '=' + query[key] + '&';
                 });
 
                 if (params.token) {
                     this.token = params.token;
-                    chatEndpoint += chatEndpoint.substring(chatEndpoint.lenght - 1) == "&" ? 'token='+params.token : '&token='+params.token;
+                    chatEndpoint += chatEndpoint.substring(chatEndpoint.lenght - 1) == "&" ? 'app_token='+params.token : '&app_token='+params.token;
                 }
 
                 if (params.origin) {
                     chatEndpoint += chatEndpoint.substring(chatEndpoint.lenght - 1) == "&" ? 'entry_point='+params.origin : '&entry_point='+params.origin;
                 }
+            }
+
+            if (params.sessionToken) {
+                chatEndpoint += chatEndpoint.substring(chatEndpoint.lenght - 1) == "&" ? 'session_token='+params.sessionToken : '&session_token='+params.sessionToken;
             }
 
             this.frame.setAttribute('src', chatEndpoint);
