@@ -403,6 +403,16 @@ class FenixClient {
         }
     }
 
+    logout() {
+        if (this.frame) {
+            this.frame.contentWindow.postMessage({
+                action: 'logout'
+            }, '*');
+        } else {
+            throw Error("Logout method being called but frame element is no ready yet.");
+        }
+    }
+
     on(event, cb) {
         this.events.forEach( (eventListenerInstance) => {
             eventListenerInstance.setCallbackListener(event, cb);
