@@ -36,7 +36,7 @@ npm run example --name=basic
 ### CDN
 You can get the lastest version from our CDN 
 ```html
-https://storage.googleapis.com/gs-fenix-public-cdn/client/sdk/fenix-client-sdk-1.2.0.min.js
+https://cdn.fenixdigital.services/client/sdk/fenix-client-sdk-1.2.0.min.js
 ```
 
 ### NPM
@@ -57,7 +57,7 @@ fenix-client.css
 
 Importing from our CDN
 ```html
-https://storage.googleapis.com/gs-fenix-public-cdn/client/sdk/fenix-client-sdk-1.2.0.min.js
+https://cdn.fenixdigital.services/client/sdk/fenix-client-sdk-1.2.0.min.js
 ```
 
 ### Instantiating the client
